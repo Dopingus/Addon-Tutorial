@@ -22,15 +22,5 @@ end
 
 --A function to print "Hello, addon!" when the FPS_UPDATE message is received.
 function HELLOADDON_UPDATE(frame, msg, argStr, argNum)
-	helloAddon.updateMessageCount();
-	helloAddon.printUpdateMessage();
-end
-
---Use a namespace for all of your functions when you can.
-function helloAddon.updateMessageCount()
-	helloAddon.updateCount = helloAddon.updateCount + 1;
-end
-
-function helloAddon.printUpdateMessage()
-	CHAT_SYSTEM("Hello, addon! " .. helloAddon.updateCount);
+	CHAT_SYSTEM("Hello, addon!");
 end
